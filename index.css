@@ -1,0 +1,113 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.container {
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    padding: 30px;
+    margin: 50px auto;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Stone600);
+}
+.container h1,h2 {
+    font-family: 'Young Serif', sans-serif;
+    color: black;
+}
+.container h2 {
+    color: var(--Brown800);
+}
+.container ul, ol {
+    padding: 0 20px;
+}
+.container li {
+    padding: 3px 0;
+}
+.btext {
+    font-weight: 700;
+}
+.line {
+    border-top: 1px solid gray;
+    width: 100%;
+}
+.omelette {
+    border-radius: 15px;
+    width: 100%;
+}
+.time {
+    background-color: var(--Rose50);
+    margin: 10px 15px;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.time h3 {
+    color: var(--Rose800);
+}
+.time li {
+    color: var(--Rose800);
+}
+span {
+    color: var(--Stone900);
+}
+.ingredients,.instruction li {
+    color: var(--Brown800);
+    font-weight: 400;
+}
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info p {
+    padding-left: 20px;
+}
+.ninfo {
+    color: var(--Brown800);
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 450px;
+        margin: 0;
+    }
+    .container {
+        width: 450px;
+        border-radius: 0;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+    .omelette {
+        width: 450px;
+        border-radius: 0;
+    }
+    .container div {
+        padding: 0 20px;
+    }
+    .container .time {
+        padding: 10px 20px;
+    }
+    .container .line {
+        padding: 0;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
